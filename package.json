@@ -1,0 +1,30 @@
+{
+  "name": "frustration-free",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "budo client/index.js --live -d dist",
+    "build": "browserify client/index.js | terser -mc > dist/index.js"
+  },
+  "keywords": [],
+  "author": "David Guttman <david@guttman.io> (http://davidguttman.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^4.3.4",
+    "http-hash": "^2.0.1",
+    "insert-css": "^2.0.0",
+    "lodash.get": "^4.4.2",
+    "lodash.set": "^4.3.2",
+    "nanohtml": "^1.10.0",
+    "nanomorph": "^5.4.3",
+    "url-parse": "^1.5.10",
+    "wildemitter": "^1.2.1"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "budo": "^11.7.0",
+    "standard": "^17.0.0",
+    "terser": "^5.13.1"
+  }
+}
